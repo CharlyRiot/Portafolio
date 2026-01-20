@@ -610,6 +610,13 @@ a:hover{ text-decoration: underline; }
   animation: rise .6s ease forwards;
   animation-delay: var(--d, 0ms);
 }
+.delay-80{ --d: 80ms; }
+.delay-120{ --d: 120ms; }
+.delay-140{ --d: 140ms; }
+.delay-180{ --d: 180ms; }
+.delay-200{ --d: 200ms; }
+.delay-240{ --d: 240ms; }
+.delay-260{ --d: 260ms; }
 
 @keyframes rise{
   to{
