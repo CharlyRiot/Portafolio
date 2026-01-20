@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio | Tu Nombre</title>
+    <meta name="description" content="Portafolio one-page con proyectos reales, demo y código." />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body>
+    <div class="bg-shapes" aria-hidden="true"></div>
+
+    <header class="wrap header">
+      <div class="topbar">
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          <span class="theme-toggle__dot" aria-hidden="true"></span>
+          <span class="theme-toggle__text">Modo oscuro</span>
+        </button>
+      </div>
+
+      <div class="hero reveal" style="--d: 80ms">
+        <div class="avatar" aria-hidden="true">CC</div>
+
+        <div class="head">
+          <p class="eyebrow">Portafolio one-page</p>
+          <p class="role role-strong role-name">Carlos Contreras</p>
+          <p class="role role-strong role-sub">Desarrollador enfocado en producto</p>
+          <h1>
+            Producto claro,
+            <span class="accent">software útil</span>
+          </h1>
+          <p class="pitch">
+            Construyo apps que resuelven un problema concreto y se entienden en minutos.
+          </p>
+
+          <div class="actions">
+            <button class="btn primary" type="button" id="open-cv">Ver CV</button>
+            <a class="btn" href="mailto:emm987654@outlook.com">Contactar</a>
+          </div>
+
+          <div class="links">
+            <a href="mailto:emm987654@outlook.com">Email</a>
+          </div>
+
+          <div class="signal">
+            <div class="signal-item">
+              <p class="signal-k">Tiempo a demo</p>
+              <p class="signal-v">2 min</p>
+            </div>
+            <div class="signal-item">
+              <p class="signal-k">Proyectos vivos</p>
+              <p class="signal-v">3</p>
+            </div>
+            <div class="signal-item">
+              <p class="signal-k">Stack base</p>
+              <p class="signal-v">Vite + JS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-item">
+            <p class="hero-k">Disponible</p>
+            <p class="hero-v">Solo remoto</p>
+          </div>
+          <div class="hero-item">
+            <p class="hero-k">Respuesta</p>
+            <p class="hero-v">24-48 horas</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="section">
+        <h2>Proyectos</h2>
+        <p class="sub">
+          3 cosas reales. Un problema. Una solución. Demo y código. Fin.
+        </p>
+
+        <div class="grid">
+          <!-- Proyecto 1 -->
+          <article class="card reveal" style="--d: 120ms">
+            <p class="card-kicker">Producto real</p>
+            <div class="card-head">
+              <h3>Sistema de Citas Inteligente</h3>
+              <p class="tagline">Agenda sin empalmes, en tiempo real.</p>
+            </div>
+
+            <ul class="meta">
+              <li><span class="k">Problema:</span> reservas con empalmes y cancelaciones desordenadas.</li>
+              <li><span class="k">Solución:</span> bloques en tiempo real + cancelación con código + panel admin.</li>
+              <li><span class="k">Resultado:</span> 0 empalmes, confirmación en 2 minutos.</li>
+              <li><span class="k">Limitaciones técnicas:</span> <button class="meta-link" type="button" id="open-limitations">Ver alcance</button></li>
+            </ul>
+
+            <div class="card-actions">
+              <a class="btn primary" href="https://demo-citas.vercel.app/" target="_blank" rel="noreferrer">Ver demo</a>
+              <a class="btn" href="https://github.com/tu-usuario/demo-citas" target="_blank" rel="noreferrer">Ver código</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="card reveal" style="--d: 180ms">
+            <p class="card-kicker">Panel PWA</p>
+            <div class="card-head">
+              <h3>Panel Administrativo de Pedidos</h3>
+              <p class="tagline">Estados claros y cálculos automáticos.</p>
+            </div>
+
+            <ul class="meta">
+              <li><span class="k">Problema:</span> estados confusos y totales manuales.</li>
+              <li><span class="k">Solución:</span> tablero con estados, totales automáticos y vista móvil.</li>
+              <li><span class="k">Resultado:</span> menos errores y despacho más predecible.</li>
+            </ul>
+
+            <div class="card-actions">
+              <a class="btn primary" href="https://demo-pedidos.tu-dominio.com" target="_blank" rel="noreferrer">Ver demo</a>
+              <a class="btn" href="https://github.com/tu-usuario/demo-pedidos" target="_blank" rel="noreferrer">Ver código</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="card reveal" style="--d: 240ms">
+            <p class="card-kicker">Inclusión</p>
+            <div class="card-head">
+              <h3>Agenda Comunitaria</h3>
+              <p class="tagline">Registros rápidos con cupo vivo.</p>
+            </div>
+
+            <ul class="meta">
+              <li><span class="k">Problema:</span> registros lentos y cupo duplicado.</li>
+              <li><span class="k">Solución:</span> registro rápido + cupo dinámico + anti-duplicados.</li>
+              <li><span class="k">Resultado:</span> inscripciones en 30 segundos, cupo controlado.</li>
+            </ul>
+
+            <div class="card-actions">
+              <a class="btn primary" href="https://demo-agenda.tu-dominio.com" target="_blank" rel="noreferrer">Ver demo</a>
+              <a class="btn" href="https://github.com/tu-usuario/demo-agenda" target="_blank" rel="noreferrer">Ver código</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Enfoque corto</h2>
+        <p class="sub">
+          Construyo productos que se entienden rápido, funcionan y se mantienen.
+          Si algo no aporta, lo quito.
+        </p>
+
+        <div class="facts">
+          <div class="fact reveal" style="--d: 140ms">
+            <p class="fact-k">Enfoque</p>
+            <p class="fact-v">Apps web, paneles admin, automatización, PWAs</p>
+          </div>
+          <div class="fact reveal" style="--d: 200ms">
+            <p class="fact-k">Prioridad</p>
+            <p class="fact-v">Claridad, performance, seguridad básica, UX clara</p>
+          </div>
+          <div class="fact reveal" style="--d: 260ms">
+            <p class="fact-k">Stack común</p>
+            <p class="fact-v">TypeScript/JS, Firebase, HTML/CSS, PWA</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Carlos Contreras.</p>
+      </footer>
+    </main>
+
+    <div class="modal" id="cv-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-modal-close></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="cv-title">
+        <button class="modal-close" type="button" data-modal-close aria-label="Cerrar modal">
+          <span aria-hidden="true">×</span>
+        </button>
+
+        <div class="cv">
+          <div class="cv-head">
+            <div>
+              <h2 id="cv-title">Carlos Contreras</h2>
+              <p class="cv-role">Especialista en sistemas</p>
+            </div>
+            <div class="cv-contact">
+              <p>Correo: <a href="mailto:emm987654@outlook.com">emm987654@outlook.com</a></p>
+            </div>
+          </div>
+
+          <section class="cv-section">
+            <h3>Perfil profesional</h3>
+            <ul>
+              <li>Especialista en sistemas, con facilidad para aprender nuevas tecnologias.</li>
+              <li>Experiencia en optimizacion de procesos, integracion de software y monitoreo de equipos.</li>
+              <li>Enfoque practico: hacer que las cosas funcionen mejor y mas simple.</li>
+            </ul>
+          </section>
+
+          <section class="cv-section">
+            <h3>Formacion</h3>
+            <div class="cv-item">
+              <p class="cv-item-title">Instituto de Computo TECI (1999-2002)</p>
+              <p>Programador en sistemas y redes</p>
+              <p>Sistemas informaticos</p>
+            </div>
+          </section>
+
+          <section class="cv-section">
+            <h3>Experiencia laboral</h3>
+            <div class="cv-item">
+              <p class="cv-item-title">Notaria - Lic. Raul Cuevas Sanchez</p>
+              <p class="cv-item-sub">Chiautempan, Tlaxcala | 08/2018 - 07/2021</p>
+              <ul>
+                <li>Jefe de sistemas y gestion de expedientes.</li>
+                <li>Atencion y asesoria al cliente.</li>
+                <li>Contabilizacion de facturas y conciliacion bancaria.</li>
+                <li>Planificacion de tareas y apoyo interdepartamental.</li>
+                <li>Gestion y documentacion de informacion en sistemas.</li>
+                <li>Optimizacion de procesos internos.</li>
+                <li>Manejo de expedientes digitales y formularios.</li>
+              </ul>
+            </div>
+            <div class="cv-item">
+              <p class="cv-item-title">Calcomania Express - Francisco Montaño</p>
+              <p class="cv-item-sub">Cordoba, Ver. | 11/2008 - 06/2018</p>
+              <ul>
+                <li>Jefe de sistemas y disenador grafico.</li>
+                <li>Branding e identidad grafica.</li>
+                <li>Diseno editorial, carteleria y material impreso.</li>
+                <li>Retoque fotografico y trabajo vectorial.</li>
+                <li>Fotografia y edicion de producto.</li>
+                <li>Contenido audiovisual (video, infografias, guias).</li>
+                <li>Anuncios para prensa y medios.</li>
+                <li>Proyectos de diseno completos, de concepto a entrega.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="cv-section">
+            <h3>Aptitudes tecnicas</h3>
+            <ul>
+              <li>Supervision, analisis, actualizacion y configuracion de sistemas.</li>
+              <li>Mantenimiento de equipos de computo.</li>
+              <li>Integracion de bases de datos en red.</li>
+              <li>Contabilidad basica.</li>
+            </ul>
+          </section>
+
+          <section class="cv-section">
+            <h3>Software</h3>
+            <div class="cv-tags">
+              <span>Microsoft Office</span>
+              <span>CorelDRAW</span>
+              <span>Photoshop</span>
+              <span>After Effects</span>
+            </div>
+          </section>
+
+          <section class="cv-section">
+            <h3>Idiomas</h3>
+            <div class="cv-tags">
+              <span>Espanol</span>
+              <span>LSM (Lengua de Senas Mexicana)</span>
+            </div>
+          </section>
+
+          <section class="cv-section">
+            <h3>Actividades y voluntariado</h3>
+            <ul>
+              <li>Trabajo comunitario voluntario.</li>
+              <li>Clases a personas sordas como Testigo de Jehova.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="limitations-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-modal-close></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="limitations-title">
+        <button class="modal-close" type="button" data-modal-close aria-label="Cerrar modal">
+          <span aria-hidden="true">×</span>
+        </button>
+
+        <div class="cv">
+          <div class="cv-head">
+            <div>
+              <h2 id="limitations-title">Limitaciones técnicas</h2>
+              <p class="cv-role">Alcance de la demo</p>
+            </div>
+          </div>
+
+          <section class="cv-section">
+            <h3>Alcance actual</h3>
+            <ul>
+              <li>Demo 100% web (sin PWA, sin instalación, sin offline).</li>
+              <li>Orientada a mostrar el flujo principal y la lógica del producto.</li>
+            </ul>
+          </section>
+
+          <section class="cv-section">
+            <h3>Potencial futuro</h3>
+            <ul>
+              <li>Puede convertirse en PWA instalable si el proyecto lo requiere.</li>
+              <li>Soporte offline y funcionalidades nativas bajo una fase posterior.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
